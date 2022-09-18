@@ -11,8 +11,8 @@ The 8-bits RCA was built using eight serial full adders. Each full adder was imp
   
 In each 16-bits CSA, the second and third 8-bits RCAs were used to calculate the sum of corresponding high 8 bits and output a carry-out bit, but with a different carry-in bit (0 and 1). The outputted sums and carry-out bits were inputted into a following 8-bit multiplexer. The first 8-bits RCA was used to calculate the sum of corresponding low 8 bits and output a carry-out bit, which was inputted into the same 8-bit multiplexer to select the required sum and carry-out bit. 
 
-For the subtraction operation, I transformed the second operand into its two's complement format and simply added the two operands together as before.  
+For the subtraction operation, I transformed the second operand into its two's complement format and simply added the two operands together as before. Therefore, I used a for-loop to reverse each bit of the second operand and set the carry-in bit of the first CSA to 1. 
 
-Overflow will be set to 1 whenever the MSB (Most Significant Bit) of  two's complement formats of
+Overflow will be set to 1 whenever the MSB (Most Significant Bit) of the first operand and the MSB of the two's complement format of the second operand are the same, but the MSB of the outputted result is different with which of two operands. 
 
-For my hierarchical decoder tree, alu.v is the top-level entity
+For my hierarchical decoder tree, alu.v is the top-level entity. 
