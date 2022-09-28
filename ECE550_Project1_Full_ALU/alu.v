@@ -12,8 +12,8 @@ module alu(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
    wire [31:0] sll_result, sra_result;
    wire [31:0] and_result, or_result;
 	
-	add_op ao(data_operandA,data_operandB,add_cout,add_result,add_overflow);
-	sub_op so(data_operandA,data_operandB,sub_cout,sub_result,sub_overflow);
+   add_op ao(data_operandA,data_operandB,add_cout,add_result,add_overflow);
+   sub_op so(data_operandA,data_operandB,sub_cout,sub_result,sub_overflow);
 	
    a_lessthan_b lt(sub_result[31],sub_overflow,isLessThan);
    a_isnotequal_b ine(sub_result,isNotEqual);
