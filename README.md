@@ -1,4 +1,4 @@
-# ECE550 - Build my own CPU processor
+# ECE550 - CPU Construction
 
 **Name: Xiuyuan Chen**  
 **NetID: xc202**  
