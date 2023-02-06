@@ -1,0 +1,16 @@
+---
+:id: 148133550
+:submitters:
+- :name: Wenxi Zhong
+  :email: wenxi.zhong@duke.edu
+- :name: Ziyu Shi
+  :email: ziyu.shi@duke.edu
+- :name: Xiuyuan Chen
+  :email: xiuyuan.chen@duke.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2022-11-11 17:46:36.815360000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2022-11-11 09:46:36.815360000 Z
+:status: processed
+:score: 100.0
